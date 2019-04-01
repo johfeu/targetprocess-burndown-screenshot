@@ -1,9 +1,9 @@
 const puppeteer = require('puppeteer');
 
 //https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786
-const user = process.env.TPUSER;
-const pass = process.env.TPPASS;
-const url = process.env.TPURL;
+const user = process.env.TP_USER;
+const pass = process.env.TP_PASSWORD;
+const url = process.env.TP_URL;
 console.log(`USER is ${user}`);
 console.log(`PW is ;-)`);
 console.log(`URL is ${url}`);

@@ -8,3 +8,7 @@ services:
       - ./app:/app
     working_dir: /app
     command: node index.js
+    environment:
+      - TP_USER=${TP_USER}
+      - TP_PASSWORD=${TP_PASSWORD}
+      - TP_URL=https://targetprocess.aoe.com/RestUI/Board.aspx#page=report/5364255767995691474&appConfig=eyJhY2lkIjoiNTFEOTcyMzVENDA5NTA4RDdGNTJFMDg0MDU1ODI2NDAifQ==
