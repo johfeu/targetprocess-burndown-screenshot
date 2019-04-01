@@ -1,0 +1,15 @@
+version: '2'
+services:
+  screenshots:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app
+    working_dir: /app
+    command: node index.js
+    environment:
+      - TPUSER=uuu
+      - TPPASS=ppp
+      - TPURL=https://targetprocess.aoe.com/RestUI/Board.aspx#
+
