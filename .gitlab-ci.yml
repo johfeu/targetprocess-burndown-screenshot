@@ -1,9 +1,11 @@
-stages:
-  - createscreenshot
+image: alpine:latest
 
-run_create_screenshot_artifact:
-  image: docker
-  stage: createscreenshot
+pages:
+  stage: deploy
   script:
-    - docker-compose up
-    - docker-compose down --volumes
+  - echo 'Nothing to do...'
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
